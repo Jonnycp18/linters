@@ -154,4 +154,4 @@ Este proyecto está licenciado bajo [MIT License](LICENSE).
 
 ## Contacto
 
-Para cualquier consulta o soporte, contacta a [tu-email@ejemplo.com](mailto:tu-email@ejemplo.com). f
+Para cualquier consulta o soporte, contacta a [tu-email@ejemplo.com](mailto:tu-email@ejemplo.com). ef
