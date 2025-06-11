@@ -11,11 +11,15 @@ jobs:
         working-directory: front_nuevo
     steps:
       - uses: actions/checkout@v3
+
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: npm install
+
+      - run: npm ci # Instala dependencias del frontend
+
       - run: npx eslint . --ext .js,.jsx,.ts,.tsx
+
       - run: npx prettier --check .
 
   lint-backend:
@@ -26,10 +30,15 @@ jobs:
         working-directory: back_cheona_nuevo
     steps:
       - uses: actions/checkout@v3
+
       - uses: actions/setup-python@v4
         with:
           python-version: "3.11"
+
       - run: pip install black flake8 isort
+
       - run: black --check .
+
       - run: flake8 .
+
       - run: isort . --check-only
